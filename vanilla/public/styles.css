@@ -1,5 +1,9 @@
-body {
+.login-body {
   background-color: #40D6E5;
+}
+
+.dash-body {
+  background-color: #EBEDFE;
 }
 
 /*Fazer uma Grid 1x1*/
@@ -33,4 +37,85 @@ body {
 
 .form-control {
   margin-bottom: 1rem;
+}
+
+/*DASHBOARD PAGE*/
+.grid-box-dash {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  grid-template-rows: 0.15fr 1fr;
+}
+
+.dash-sidebar {
+  grid-row: 1/3;
+  background-color: #3C4B64;
+}
+
+.dash-topbar {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #FFFFFF;
+}
+
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.scrollable {
+  overflow-y: auto;
+}
+
+.dash-item-card {
+  background-color: #FFFFFF;
+  height: 6rem;
+  border-radius: 0.8rem;
+}
+.dash-item-card h3{
+  margin-top: 0.8rem;
+  text-align: center;
+}
+.dash-item-card p{
+  text-align: center;
+}
+
+.dash-big-item-card {
+  grid-column: 1/5;
+  background-color: #FFFFFF;
+  height: 30rem;
+  border-radius: 0.8rem;
+}
+
+.dash-grid-3col {
+  grid-column: 1/5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+}
+
+.dash-item-card-3col-fb {
+  height: 6rem;
+  border-radius: 0.8rem;
+  background-color: #4867AA;
+}
+
+.dash-item-card-3col-gh {
+  height: 6rem;
+  border-radius: 0.8rem;
+  background-color: #FFFFFF;
+}
+
+.dash-item-card-3col-li {
+  height: 6rem;
+  border-radius: 0.8rem;
+  background-color: #0066A1;
 }
